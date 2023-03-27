@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+  <title>Loan Calculator</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="mancon">
+    <div class="smallcomnn">
+      <h1 class="heedg">
+        Loan Calculator
+      </h1>
+      <div class="singdiv">
+        <p class="parag">Loan Account $ </p>
+        <input type="number" value="10000" onchange="calcu()" class="firsinp" id="firstinput">
+      </div>
+      <div class="singdiv">
+        <p class="parag">Insert Rate %</p>
+        <input type="number" onchange="calcu()" value="10" class="secinp" id="secinput">
+      </div>
+      <div class="singdiv">
+        <p class="parag">Monthly to pa</p>
+        <input type="number" onchange="calcu()" value="12" class="thirdnp" id="thirinput">
+      </div>
+      <h3 class="lastpa">Monthly Payment : <span id="lasstreset"></span></h3>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
